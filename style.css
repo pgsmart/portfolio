@@ -34,7 +34,7 @@
     border-left: solid 3px #ffffff;
     border-bottom: solid 3px #ffffff;
     border-right: solid 3px #ffffff;
-    height: 280px;
+    height: 315px;
 }
 
 .gameDetails{
@@ -50,6 +50,7 @@
     border-top: solid 3px #ffffff;
     border-right: solid 3px #ffffff;
     border-bottom: solid 3px #ffffff;
+    transition: 1s;
 }
 
 .projectImg{
@@ -62,6 +63,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 3%;
 }
 
 .gameDetails:hover{
@@ -107,29 +109,22 @@ a:visited + .button-36{
     background-color: aquamarine;
 }
 
+.gameDiv:hover{
+    box-shadow: 10px 10px 5px lightblue;
+}
+
 .gameInfo:hover + .gameDetails{
     display:flex;
-    box-shadow: 10px 10px 5px lightblue;
 }
 
 
-.languageDiv:hover + .gameInfo{
-    display: flex;
-    border-right: #236ad4;
-    background-color: rgb(30, 255, 0);
-    border-top-right-radius: 0%;
-    border-bottom-right-radius: 0%;
-    margin: 20%;
-    flex-direction: row;
-}
-
-.gameInfo:hover{
+.gameDiv:hover .gameInfo{
+    
     border-right: #236ad4;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
-    height: 314px;
-    box-shadow: 10px 10px 5px lightblue;
 }
+
 
 .languageDiv{
     display: flex;
