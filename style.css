@@ -15,9 +15,18 @@
     flex-wrap: wrap;
 }
 .headerDiv{
+    background-color: #0a559c;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 1px 30px;
+    transition: 0.5s;
+}
+.headerDiv:hover{
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
 }
 
 .gameInfo{
@@ -34,11 +43,10 @@
     border-left: solid 3px #ffffff;
     border-bottom: solid 3px #ffffff;
     border-right: solid 3px #ffffff;
-    height: 315px;
+    height: 308px;
 }
 
 .gameDetails{
-    display: flex;
     flex-direction: column;
     padding: 1%;
     padding-left: 2%;
@@ -50,7 +58,8 @@
     border-top: solid 3px #ffffff;
     border-right: solid 3px #ffffff;
     border-bottom: solid 3px #ffffff;
-    transition: 1s;
+    max-width: 1px;
+    transition: max-width 5s;
 }
 
 .projectImg{
@@ -58,16 +67,18 @@
 }
 
 .gameDiv{
-    max-width: 40%;
+    max-width: 900px;
     margin: 2%;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 3%;
+    transition: 0.5s;
 }
 
 .gameDetails:hover{
     display: flex;
+    max-width: 500px;
 }
 
 /* CSS */
@@ -115,11 +126,11 @@ a:visited + .button-36{
 
 .gameInfo:hover + .gameDetails{
     display:flex;
+    max-width: 500px
 }
 
 
 .gameDiv:hover .gameInfo{
-    
     border-right: #236ad4;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
@@ -131,10 +142,34 @@ a:visited + .button-36{
     flex-direction: row;
 }
 
+.navButton{
+    font-family: titleFont;
+    background-color: rgb(7, 20, 63);
+    color: #ffffff;
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: #ffffff;
+    border-width: 3px;
+    border-style: offset;
+    padding: 7px;
+}
+
+.navButton:hover{
+    background-color: #236ad4;
+}
 
 
 .languageImg{
     padding: 10px 10px 10px 10px;
+}
+
+h1{
+    align-self: center;
+    color: rgb(255, 255, 255);
+    font-family: titleFont;
+    font-size: 40px;
+    font-weight: 100;
+    text-align: center;
 }
 
 h2{
@@ -153,8 +188,48 @@ p{
     color: rgb(255, 255, 255);
     font-family: smallFont;
     font-size: 20px;
+    text-align: center;
 }
 
 body{
     background-color: rgb(7, 20, 63);
 }
+
+.introDiv{
+    display:flex;
+    justify-content: center;
+    padding-top: 2%;
+    flex-direction: column;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+ .contactButton{
+    background-color: #ffffff;
+    width: 60px;
+    border-radius: 50%;
+    padding: 2px;
+ }
+
+ .contactBorder{
+    padding: 10px;
+ }
+
+ .contactButton:hover{
+    opacity: 70%;
+ }
+
+ .contactDiv{
+    display: flex;
+    justify-content: center;
+ }
+
+
